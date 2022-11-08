@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.div`
-  img {
+  section img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -16,3 +16,14 @@ export const StyledHeader = styled.div`
     margin-top: 50px;
   }
 `;
+
+export const StyledBanner = styled.div`
+  height: 230px;
+  background-image: url(${({ banner }) => banner});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  // arredondar as bordas de baixo
+  border-radius: 0 0 10px 10px;
+`;
+

@@ -1,10 +1,11 @@
 import config from "/config.json";
 import React from "react";
-import { StyledHeader } from "./styled";
+import { StyledHeader, StyledBanner } from "./styled";
 
 function Header() {
   return (
-    <StyledHeader>
+    <StyledHeader >
+      <StyledBanner banner={config.banner} />
       <section className="user-info">
         <img
           src={`https://github.com/${config.github}.png`}
