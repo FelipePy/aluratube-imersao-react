@@ -5,9 +5,9 @@ function BaseBoard({ favorites }) {
     <StyledBaseBoard>
       <h2>Favoritos</h2>
       <ul>
-        {favorites.map((favorite) => {
+        {favorites.map((favorite, index) => {
           return (
-            <section>
+            <section key={index}>
               <div>
                 <a href={favorite.url}>
                   <img src={favorite.thumb} />

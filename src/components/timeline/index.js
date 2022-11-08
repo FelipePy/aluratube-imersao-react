@@ -7,18 +7,20 @@ function TimeLine(props) {
   // Pesquisar Statement e Expressão
   return (
     <StyledTimeline>
-      {playlistsNames.map((playlistName) => {
+      {playlistsNames.map((playlistName, index) => {
         const videos = props.playlists[playlistName];
         return (
-          <section>
+          <section key={index}>
             <h2>{playlistName}</h2>
             <div>
-              {videos.map((video) => {
+              {videos.map((video, index) => {
                 return (
-                  <a href={video.url}>
-                    <img src={video.thumb} />
-                    <span>{video.title}</span>
-                  </a>
+                  <div key={index}>
+                    <a href={video.url}>
+                      <img src={video.thumb} />
+                      <span>{video.title}</span>
+                    </a>
+                  </div>
                 );
               })}
             </div>

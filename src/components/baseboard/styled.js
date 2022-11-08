@@ -7,6 +7,12 @@ export const StyledBaseBoard = styled.div`
         text-transform: capitalize;
     }
 
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
     ul {
         display: flex;
         flex-wrap: wrap;
@@ -20,12 +26,6 @@ export const StyledBaseBoard = styled.div`
                 margin-right: 24px;
                 display: flex;
             }
-        }
-    
-        img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
         }
     }
 `;

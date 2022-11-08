@@ -6,6 +6,7 @@ import BaseBoard from "../components/baseboard";
 import config from "/config.json";
 import React from "react";
 import { CSSReset } from "../components/CSSReset";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
@@ -16,7 +17,7 @@ function HomePage() {
         <Menu />
         <Header />
         <TimeLine playlists={config.playlists} />
-        <BaseBoard favorites={config.favorites}/>
+        <BaseBoard favorites={config.favorites} />
       </div>
     </>
   );
