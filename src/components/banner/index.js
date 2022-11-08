@@ -10,7 +10,7 @@ function Banner() {
         objectFit: "cover",
         objectPosition: "center",
         borderRadius: "0px 0px 8px 8px",
-      }} src="http://127.0.0.1:3000/images/banner.jpg" />
+      }} src="https://aluratube-imersao-react-ten.vercel.app/images/banner.jpg" />
       
     </div>
   );
