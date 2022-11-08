@@ -9,15 +9,16 @@ import { CSSReset } from "../components/CSSReset";
 import { Link } from "react-router-dom";
 
 function HomePage() {
+  const [valueFilter = "", setValueFilter] = React.useState();
   return (
     <>
       <CSSReset />
       <div>
         <Banner />
-        <Menu />
+        <Menu valueFilter={valueFilter} setValueFilter={setValueFilter} />
         <Header />
-        <TimeLine playlists={config.playlists} />
-        <BaseBoard favorites={config.favorites} />
+        <TimeLine playlists={config.playlists} valueFilter={valueFilter} />
+        <BaseBoard favorites={config.favorites} valueFilter={valueFilter} />
       </div>
     </>
   );
