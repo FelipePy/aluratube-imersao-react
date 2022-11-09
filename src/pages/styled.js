@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const StyledHome = styled.div`
-  background-color: ${(props) => props.colors.background};
-  color: ${(props) => props.colors.textColor};
-  border-color: ${(props) => props.colors.borderBase};
+  background-color: ${(props) => props.theme.colors.background};
+  color: ${(props) => props.theme.colors.textColor};
+  border-color: ${(props) => props.theme.colors.borderBase};
 `;
 
 export default StyledHome;
