@@ -1,34 +1,33 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const StyledSearch = styled.div`
   display: flex;
   flex-direction: row;
-  border: 1px solid ${({ theme }) => theme.borderBase};
   max-width: 425px;
   width: 100%;
   border-radius: 2px;
   overflow: hidden;
-  
+
   input {
-    width: 80%;
+    width: 90%;
     padding: 4px 6px;
+    border-radius: 20px 20px 20px 20px;
     border: none;
     outline: none;
-    color: ${({ theme }) => theme.textColorBase};
-    background-color: ${({ theme }) => theme.backgroundBase};
+    background-color: #fff;
   }
+
   button {
+    position: relative;
+    left: -30px;
     flex: 1;
     cursor: pointer;
+    border-radius: 20px 20px 20px 20px;
     border: none;
-    background-color: ${({ theme }) => theme.backgroundLevel2};
-    box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
-    border-left: 1px solid ${({ theme }) => theme.borderBase};
-    width: 40px;
-    height: 40px;
+    background-color: #fff;
     @media (min-width: 600px) {
-      width: 64px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
     }
   }
 `;

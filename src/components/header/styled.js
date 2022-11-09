@@ -1,20 +1,34 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.div`
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+    background-color: ${(props) => props.theme.colors.background};
+  }
+
   section img {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 30%;
   }
 
   .user-info {
     display: flex;
     align-items: center;
     widht: 100%;
-    padding: 16px 32px;
+    padding: 10px 20px;
     gap: 16px;
-    margin-top: 50px;
+    margin-top: 10px;
   }
+
+  .switch {
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  
 `;
 
 export const StyledBanner = styled.div`
@@ -26,4 +40,3 @@ export const StyledBanner = styled.div`
   // arredondar as bordas de baixo
   border-radius: 0 0 10px 10px;
 `;
-

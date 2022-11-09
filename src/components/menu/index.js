@@ -7,7 +7,7 @@ export default function Menu({ valueFilter, setValueFilter }) {
       <div>
         <Logo />
       </div>
-        <Search valueFilter={valueFilter} setValueFilter={setValueFilter}/>
+      <Search valueFilter={valueFilter} setValueFilter={setValueFilter} />
     </StyledMenu>
   );
 }
