@@ -24,6 +24,10 @@ export const StyledTimeline = styled.div`
         a {
           text-align: center;
           width: 90%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
 
           img {
             aspect-ratio: 16/9;
