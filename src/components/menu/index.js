@@ -1,13 +1,34 @@
 import Search from "./components/search";
 import { StyledMenu } from "./styled";
+import Switch from "react-switch";
+import { useContext } from "react";
+import { ThemeContext } from "styled-components";
 
-export default function Menu({ valueFilter, setValueFilter }) {
+export default function Menu({ valueFilter, setValueFilter, toggleTheme }) {
+  const { colors, title } = useContext(ThemeContext);
+  
   return (
     <StyledMenu>
       <div>
         <Logo />
       </div>
       <Search valueFilter={valueFilter} setValueFilter={setValueFilter} />
+      <Switch
+              className="switch"
+              onChange={toggleTheme}
+              checked={title === "dark"}
+              checkedIcon={false}
+              uncheckedIcon={false}
+              uncheckedHandleIcon={"🌞"}
+              checkedHandleIcon={"🌑"}
+              height={17}
+              width={40}
+              onColor={colors.background2}
+              offColor={colors.borderBase}
+              // colocar a cor do handle modo dark
+              offHandleColor={false}
+              onHandleColor={false}
+            />
     </StyledMenu>
   );
 }

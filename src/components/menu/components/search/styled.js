@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 const StyledSearch = styled.div`
   display: flex;
   flex-direction: row;
@@ -14,7 +15,7 @@ const StyledSearch = styled.div`
     border-radius: 20px 20px 20px 20px;
     border: none;
     outline: none;
-    background-color: #fff;
+    background-color: ${(props) => props.theme.colors.background2};
   }
 
   button {
@@ -24,7 +25,7 @@ const StyledSearch = styled.div`
     cursor: pointer;
     border-radius: 20px 20px 20px 20px;
     border: none;
-    background-color: #fff;
+    background-color: ${(props) => props.theme.colors.background2};
     @media (min-width: 600px) {
       width: 30px;
       height: 30px;

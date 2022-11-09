@@ -27,7 +27,6 @@ export const StyledTimeline = styled.div`
           flex-direction: column;
           align-items: center;
           text-align: center;
-          
 
           img {
             aspect-ratio: 16/9;
@@ -55,11 +54,10 @@ export const StyledTimeline = styled.div`
       }
 
       li:hover {
-          a {
-            transform: scale(1.2);
-            transition: all 0.4s ease-in-out;
-          }
-          
+        a {
+          transform: scale(1.2);
+          transition: all 0.4s ease-in-out;
+        }
       }
     }
   }
@@ -95,7 +93,6 @@ export const StyledTimeline = styled.div`
               overflow: hidden;
               text-overflow: ellipsis;
               font-weight: 500;
-
             }
           }
         }

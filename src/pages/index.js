@@ -17,8 +17,9 @@ function HomePage(props) {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Menu valueFilter={valueFilter} setValueFilter={setValueFilter} />
-        <Header
+        <Menu
+          valueFilter={valueFilter}
+          setValueFilter={setValueFilter}
           toggleTheme={() => {
             if (theme.title === "light") {
               setTheme(dark);
@@ -35,6 +36,7 @@ function HomePage(props) {
             }
           }}
         />
+        <Header />
         <TimeLine
           playlists={config.playlists}
           valueFilter={valueFilter}

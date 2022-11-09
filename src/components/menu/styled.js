@@ -23,4 +23,20 @@ export const StyledMenu = styled.header`
       fill: ${(props) => props.theme.colors.text};
     }
   }
+
+  .switch {
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+
+    .react-switch-bg {
+      border: 2px solid ${(props) => props.theme.colors.text};
+    }
+
+    .react-switch-handle {
+      font-size: 30px;
+      position: relative;
+      left: 12%;
+    }
+  }
 `;
