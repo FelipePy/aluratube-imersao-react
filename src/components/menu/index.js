@@ -26,8 +26,8 @@ export default function Menu({ valueFilter, setValueFilter, toggleTheme }) {
               onColor={colors.background2}
               offColor={colors.borderBase}
               // colocar a cor do handle modo dark
-              offHandleColor={false}
-              onHandleColor={false}
+              offHandleColor={""}
+              onHandleColor={""}
             />
     </StyledMenu>
   );
