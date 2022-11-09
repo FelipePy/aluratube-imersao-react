@@ -23,6 +23,11 @@ export const StyledTimeline = styled.div`
 
         a {
           text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          
 
           img {
             aspect-ratio: 16/9;
@@ -34,11 +39,27 @@ export const StyledTimeline = styled.div`
           }
 
           span {
-            padding: 8px;
+            padding: 8px 0 0 8px;
             text-transform: uppercase;
+            text-align: start;
             color: ${(props) => props.theme.colors.text};
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            line-height: 1.5rem;
+            font-weight: 600;
           }
         }
+      }
+
+      li:hover {
+          a {
+            transform: scale(1.2);
+            transition: all 0.4s ease-in-out;
+          }
+          
       }
     }
   }
@@ -67,10 +88,14 @@ export const StyledTimeline = styled.div`
             }
 
             span {
+              display: block;
+              -webkit-box-orient: vertical;
               white-space: nowrap;
               width: 12em;
               overflow: hidden;
               text-overflow: ellipsis;
+              font-weight: 500;
+
             }
           }
         }
