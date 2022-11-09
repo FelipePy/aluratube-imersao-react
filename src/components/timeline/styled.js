@@ -23,11 +23,6 @@ export const StyledTimeline = styled.div`
 
         a {
           text-align: center;
-          width: 90%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
 
           img {
             aspect-ratio: 16/9;
@@ -42,6 +37,41 @@ export const StyledTimeline = styled.div`
             padding: 8px;
             text-transform: uppercase;
             color: ${(props) => props.theme.colors.text};
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-device-width: 900px) {
+    section {
+      width: 100%;
+
+      ul {
+        width: 100%;
+        display: grid;
+        grid-gap: 8px;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
+        li {
+          width: 30%;
+
+          a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 150px;
+            }
+
+            span {
+              white-space: nowrap;
+              width: 12em;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
           }
         }
       }
