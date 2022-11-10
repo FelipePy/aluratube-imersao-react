@@ -2,10 +2,12 @@ import Search from "./components/search";
 import { StyledMenu } from "./styled";
 import Switch from "react-switch";
 import { useContext } from "react";
-import { ThemeContext } from "styled-components";
+import { ColorModeContext } from "./components/ ColorMode";
 
 export default function Menu({ valueFilter, setValueFilter, toggleTheme }) {
-  const { colors, title } = useContext(ThemeContext);
+  const context = useContext(ColorModeContext);
+  const colors = context.mode.colors;
+  const title = context.mode.title;
   
   return (
     <StyledMenu>

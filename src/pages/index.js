@@ -8,33 +8,19 @@ import { ThemeContext, ThemeProvider } from "styled-components";
 import light from "../styles/themes/light";
 import dark from "../styles/themes/dark";
 import { parseCookies, setCookie } from "nookies";
+import { ColorModeContext } from "../components/menu/components/ ColorMode";
 
 function HomePage(props) {
   const [valueFilter, setValueFilter] = React.useState("");
-  const [theme, setTheme] = useState(props.theme);
+  const context = useContext(ColorModeContext);
 
   return (
     <>
-      <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Menu
           valueFilter={valueFilter}
           setValueFilter={setValueFilter}
-          toggleTheme={() => {
-            if (theme.title === "light") {
-              setTheme(dark);
-              setCookie(null, "theme", JSON.stringify(dark), {
-                maxAge: 60 * 60 * 24 * 30, // 30 days
-                path: "/",
-              });
-            } else {
-              setTheme(light);
-              setCookie(null, "theme", JSON.stringify(light), {
-                maxAge: 60 * 60 * 24 * 30,
-                path: "/",
-              });
-            }
-          }}
+          toggleTheme={context.toggleMode}
         />
         <Header />
         <TimeLine
@@ -42,7 +28,6 @@ function HomePage(props) {
           valueFilter={valueFilter}
           favorites={config.favorites}
         />
-      </ThemeProvider>
     </>
   );
 }

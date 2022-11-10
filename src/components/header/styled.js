@@ -21,6 +21,7 @@ export const StyledHeader = styled.div`
     padding: 10px 20px;
     gap: 16px;
     margin-top: 10px;
+    background-color: ${(props) => props.theme.colors.background1};
   }
 `;
 
