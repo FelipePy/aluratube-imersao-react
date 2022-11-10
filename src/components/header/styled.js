@@ -21,6 +21,7 @@ export const StyledHeader = styled.div`
     gap: 16px;
     margin-top: 10px;
     background-color: ${(props) => props.theme.colors.background1};
+    transition: all 0.50s;
   }
 `;
 
@@ -30,6 +31,5 @@ export const StyledBanner = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  // arredondar as bordas de baixo
   border-radius: 0 0 10px 10px;
 `;

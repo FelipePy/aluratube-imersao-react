@@ -15,7 +15,7 @@ const StyledSearch = styled.div`
     border-radius: 20px 20px 20px 20px;
     border: none;
     outline: none;
-    background-color: ${(props) => props.theme.colors.background2};
+    background-color: ${(props) => props.theme.colors.background1};
     color: ${(props) => props.theme.colors.text};
     transition: all 0.50s;
   }
@@ -27,7 +27,7 @@ const StyledSearch = styled.div`
     cursor: pointer;
     border-radius: 20px 20px 20px 20px;
     border: none;
-    background-color: ${(props) => props.theme.colors.background2};
+    background-color: ${(props) => props.theme.colors.background1};
     transition: all 0.50s;
     @media (min-width: 600px) {
       width: 30px;
