@@ -6,7 +6,6 @@ import { GlobalStyle } from "../../styles/global";
 function Header() {
   return (
     <StyledHeader>
-      <GlobalStyle />
       <StyledBanner banner={config.banner} />
       <section>
         <div className="user-info">

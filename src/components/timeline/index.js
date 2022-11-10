@@ -9,7 +9,6 @@ function TimeLine({ valueFilter, ...props }) {
   // Pesquisar Statement e Expressão
   return (
     <StyledTimeline>
-      <GlobalStyle />
       {playlistsNames.map((playlistName, index) => {
         const videos = props.playlists[playlistName];
         return (

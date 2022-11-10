@@ -11,7 +11,7 @@ export const ColorModeContext = createContext({
 });
 
 export default function ColorModeProvider({ children, initialMode }) {
-  const [mode, setMode] = useState(initialMode);
+  const [mode, setMode] = useState(initialMode || light);
 
   const toggleMode = () => {
     setMode(mode.title === 'light' ? dark : light);

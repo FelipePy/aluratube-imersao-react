@@ -41,7 +41,6 @@ export const StyledTimeline = styled.div`
             padding: 8px 0 0 8px;
             text-transform: uppercase;
             text-align: start;
-            color: ${(props) => props.theme.colors.text};
             overflow: hidden;
             display: -webkit-box;
             -webkit-line-clamp: 2;

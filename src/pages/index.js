@@ -16,7 +16,6 @@ function HomePage(props) {
 
   return (
     <>
-        <GlobalStyle />
         <Menu
           valueFilter={valueFilter}
           setValueFilter={setValueFilter}

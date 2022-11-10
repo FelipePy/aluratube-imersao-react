@@ -16,6 +16,7 @@ const StyledSearch = styled.div`
     border: none;
     outline: none;
     background-color: ${(props) => props.theme.colors.background2};
+    color: ${(props) => props.theme.colors.text};
     transition: all 0.50s;
   }
 

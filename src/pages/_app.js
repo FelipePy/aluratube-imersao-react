@@ -2,7 +2,8 @@ import React, { useContext } from "react"
 import { ThemeProvider } from "styled-components";
 import ColorModeProvider from "../components/menu/components/ ColorMode";
 import { ColorModeContext } from "../components/menu/components/ ColorMode";
-import dark from "../styles/themes/dark";
+import { GlobalStyle } from "../styles/global";
+import light from "../styles/themes/light";
 
 function ProviderWrapper(props) {
     return (
@@ -18,6 +19,7 @@ function MyApp({ Component, pageProps }) {
 
     return (
         <ThemeProvider theme={context.mode}>
+            <GlobalStyle />
             <Component {...pageProps} />
         </ThemeProvider>
     )
