@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import StyledHome from "../../pages/styled";
 
 export const StyledMenu = styled.header`
   display: flex;
