@@ -30,7 +30,7 @@ function HomePage(props) {
             } else {
               setTheme(light);
               setCookie(null, "theme", JSON.stringify(light), {
-                maxAge: 30 * 24 * 60 * 60,
+                maxAge: 60 * 60 * 24 * 30,
                 path: "/",
               });
             }

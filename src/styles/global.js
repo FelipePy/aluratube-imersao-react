@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 14px;
         font-family: 'Roboto', sans-serif;
         color: ${(props) => props.theme.colors.text};
+        transition: all 0.50s;
 
         a {
             text-decoration: none;

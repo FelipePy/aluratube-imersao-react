@@ -12,6 +12,7 @@ export const StyledMenu = styled.header`
   padding: 0 16px;
   gap: 16px;
   width: 100%;
+  transition: all 0.50s;
 
   .logo {
     width: 100%;
@@ -34,7 +35,7 @@ export const StyledMenu = styled.header`
     }
 
     .react-switch-handle {
-      font-size: 30px;
+      font-size: 24px;
       position: relative;
       left: 12%;
     }

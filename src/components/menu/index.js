@@ -19,15 +19,20 @@ export default function Menu({ valueFilter, setValueFilter, toggleTheme }) {
               checked={title === "dark"}
               checkedIcon={false}
               uncheckedIcon={false}
-              uncheckedHandleIcon={"🌞"}
-              checkedHandleIcon={"🌑"}
-              height={17}
-              width={40}
+              handleDiameter={10}
+              uncheckedHandleIcon={<div>
+                🌞
+              </div>}
+              checkedHandleIcon={<div>
+                🌑
+              </div>}
+              height={18}
+              width={44}
               onColor={colors.background2}
               offColor={colors.borderBase}
-              // colocar a cor do handle modo dark
-              offHandleColor={""}
-              onHandleColor={""}
+              offHandleColor={colors.background}
+              onHandleColor={colors.background}
+
             />
     </StyledMenu>
   );

@@ -16,6 +16,7 @@ const StyledSearch = styled.div`
     border: none;
     outline: none;
     background-color: ${(props) => props.theme.colors.background2};
+    transition: all 0.50s;
   }
 
   button {
@@ -26,6 +27,7 @@ const StyledSearch = styled.div`
     border-radius: 20px 20px 20px 20px;
     border: none;
     background-color: ${(props) => props.theme.colors.background2};
+    transition: all 0.50s;
     @media (min-width: 600px) {
       width: 30px;
       height: 30px;
